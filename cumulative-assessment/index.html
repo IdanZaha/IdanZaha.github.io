@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    
+    <title>The Shoe Warehouse</title>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+    <style>
+        .container {
+            position: relative;
+            width: 50%;
+        }
+
+        .image {
+            opacity: 1;
+            display: block;
+            width: 50%;
+            height: auto;
+            transition: .5s ease;
+            backface-visibility: hidden;
+        }
+        .middle {
+            transition: .5s ease;
+            opacity: 0;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            /* Both these translates are used for moving the .image to the center of the image of the shoe. */
+            transform: translate( -200%, -50%); 
+            -ms-transform: translate( -200%, -50%);  
+            text-align: center;
+        }
+        .container:hover .image{
+            opacity: 0.3;
+        }
+        .container:hover .middle {
+            opacity: 1;
+        }
+        .text {
+            background-color: white;
+            color: black;
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+    </style>
+</head>
+<body>
+    <center><h1>The Shoe Warehouse</h1></center>
+    <center><h4>We are the Warehouse for Shoes.</h4></center>
+    <div>
+    <a href="index2.html"><img src="images/tag.jpg" width="50" height="50"></a> <a href="index2.html" >Upcoming Drops</a>
+</div>
+<br/>
+<div class="container">
+        <a href="nmdsr1.html"><img src="images/nmdr1.jpg" alt="Avatar" class="image" width="150" height="100"></a>
+        <div class="middle">
+        <a href="nmdsr1.html"><div class="text">NMD R1</div></a>
+        </div>
+      </div>
+
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+      <div>
+          <bold><center><p>Hello, this is my shoe website. This is my first HTML project for class. <br> My website is about shoes because I love shoes. <br> Everything on my website has something important about it, like when you hover over an image you see the name of the shoe and you can click on the image or the box to take you to the shoe selection process. <br> I also have different pages like the Upcoming Drops Page.</p></center></bold>
+      </div>
+</body>
