@@ -1,0 +1,279 @@
+body {
+    background-image: url("background.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+
+/**
+This is the actual positions and colors of the threelines.png image. This is is the button you hover over for the drop
+down content to drop down.
+**/
+
+.dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    animation: dropbtn 3s ease-in;
+    transition: all 0.3s ease;
+}
+
+
+/**
+This is the positioning of the div. inline-block is used to display list blocks, it is used to make the 
+actual "nav bar" in this case be horizontal.
+**/
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+
+/**
+This code is for when the content is displayed, and where it is positioned. Also the colors, and the box shadow shown
+on the content displayed.
+**/
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    font-family: sans-serif;
+    margin-left: 15px;
+}
+
+
+/**
+This is the content inside the dropdown, and how it is placed and the color of the text when it is first seen.
+ **/
+
+.dropdown-content a {
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+}
+
+
+/**
+All this dropdown code under this comment, is either for the content inside when the content is hovered over, or what happens when you
+hover over the actual drop down menu.
+**/
+
+.dropdown-content a:hover {
+    background-color: #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+h1 {
+    font-family: sans-serif;
+    color: #0094FF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: lightgray;
+    margin-top: 125px;
+    animation: dropbtn 3s ease-in;
+}
+
+h3 {
+    font-family: sans-serif;
+    color: white;
+    margin-top: 460px;
+    margin-right: 1225px;
+}
+
+
+/**
+This is the animation for when you first load up the page the threelines and the moto flow in nicely, and 
+from a certain opacity to another.
+**/
+
+@-webkit-keyframes dropbtn {
+    from {
+        transform: translateY(0px) rotate(0deg) scale(1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotate(0deg) scale(1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes dropbtn {
+    from {
+        transform: translateY(0px) rotate(0deg) scale(1, 1);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0px) rotate(0deg) scale(1, 1);
+        opacity: 1;
+    }
+}
+
+.name {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgb(105, 105, 105, 0.8);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-right: 675px;
+    position: relative;
+}
+
+.mice {
+    color: white;
+    font-family: sans-serif;
+    width: 150px;
+    text-align: center;
+    background-color: rgb(0, 0, 0, 0.8);
+    margin-left: 654px;
+    margin-top: 100px;
+    font-size: 30px;
+    position: relative;
+}
+
+.mouse {
+    margin-left: 629px;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+h5 {
+    margin-bottom: 0;
+}
+
+.buy1 {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: rgb(105, 105, 105, 0.8);
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    margin-left: auto;
+    margin-top: 325px;
+    margin-bottom: -69px;
+    margin-right: 935px;
+    position: relative;
+}
+
+.buy1 a {
+    position: relative;
+    background-color: rgb(52, 152, 219);
+    padding: 10px;
+    top: 13.5px;
+    position: relative;
+}
+
+h6 {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.kb {
+    margin-left: 800px;
+    position: relative;
+    bottom: 700px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a :hover {
+    background-color: rgb(52, 152, 219);
+}
+
+.cart {
+    position: relative;
+    float: right;
+    top: -350px;
+    right: -5px;
+}
+
+.myBox {
+    border: none;
+    padding: 5px;
+    font: 24px/36px sans-serif;
+    width: 500px;
+    height: 500px;
+    overflow: scroll;
+    margin-left: 400px;
+    margin-top: 75px;
+    border: 2px solid white;
+    border-radius: 2px;
+    position: relative;
+}
+
+ ::-webkit-scrollbar-track {
+    border: 1px solid #37373737;
+    border-radius: 11px;
+}
+
+.h10 {
+    color: black;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-top: -110px;
+    background-color: white;
+    height: 49.5px;
+    text-align: center;
+}
+
+.h11 {
+    color: black;
+    font-size: 30px;
+    margin-left: 110px;
+    margin-top: -19px;
+    background-color: white;
+    height: 49.5px;
+    text-align: center;
+}
+
+.co {
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    background-color: #3498DB;
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: auto;
+    bottom: 122.5px;
+    margin-right: -350px;
+    position: relative;
+}
+
+
+/**
+This is a transition that changes the threelines from opaque to solid color.
+**/
+
+.dropbtn {
+    opacity: 0.5;
+}
+
+.dropbtn:hover {
+    opacity: 1;
+}

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CART PAGE</title>
+    <style>
+        body {
+            background-image: url("background2.png");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            background-color: #161616;
+        }
+        
+        .dropbtn {
+            margin-left: 40px;
+            margin-top: 30px;
+            background-color: rgba(255, 255, 255, 0);
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: rgba(194, 178, 178, 0);
+            box-shadow: 0px 8px 5px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+            font-family: sans-serif;
+            margin-left: 53px;
+        }
+        
+        .dropdown-content a {
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            display: block;
+            font-size: 20px;
+        }
+        
+        .dropdown-content a:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        .dropdown:hover .dropbtn {
+            background-color: rgba(255, 255, 255, 0);
+        }
+        
+        .myBox {
+            border: none;
+            padding: 5px;
+            font: 24px/36px sans-serif;
+            width: 500px;
+            height: 500px;
+            overflow: scroll;
+            margin-left: 400px;
+            margin-top: 75px;
+            border: 2px solid white;
+            border-radius: 2px;
+            position: relative;
+        }
+        
+         ::-webkit-scrollbar-track {
+            border: 1px solid #37373737;
+            border-radius: 11px;
+        }
+        
+        h1 {
+            color: black;
+            font-size: 30px;
+            margin-left: 110px;
+            margin-top: -110px;
+            background-color: white;
+            height: 49.5px;
+            text-align: center;
+        }
+        
+        h2 {
+            color: black;
+            font-size: 30px;
+            margin-left: 110px;
+            margin-top: -19px;
+            background-color: white;
+            height: 49.5px;
+            text-align: center;
+        }
+        
+        .co {
+            color: white;
+            font-family: sans-serif;
+            font-size: 15px;
+            background-color: #3498DB;
+            width: 200px;
+            height: 50px;
+            text-align: center;
+            font-size: 30px;
+            margin-left: auto;
+            bottom: 123px;
+            margin-right: -350px;
+            position: relative;
+            float: right;
+        }
+        
+        .dropbtn {
+            opacity: 0.5;
+        }
+        
+        .dropbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="dropdown">
+        <button class="dropbtn"><img src="threelines.png" width="75px" height="75px"></button>
+        <div class="dropdown-content">
+            <a href="shop.html">Shop</a>
+        </div>
+        <div class="myBox">
+            <img src="logitech.png" width="100px" height="100px">
+            <h1>168.99 CAD</h1>
+            <h2>Logitech G Pro Wireless</h2>
+        </div>
+        <h6 class="co"><a>Checkout</a></h6>
+</body>
+
+</html>
