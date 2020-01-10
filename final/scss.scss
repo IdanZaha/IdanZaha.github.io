@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.header {
+    background: #e74c3c;
+    box-shadow: 0 0 0.8123rem 0 rgba(0, 0, 0, .75);
+    height: 76px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+nav {
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+    li {
+        display: inline;
+    }
+    a {
+        color: white;
+        text-decoration: none;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        text-align: center;
+        padding: 21px;
+        font-weight: bold;
+    }
+    a:hover {
+        background: #c0392b;
+    }
+}
+
+.pizzahl {
+    float: left;
+    width: 300px;
+    height: 70px;
+    margin-top: 3.5px;
+    margin-left: 30px;
+}
+
+.content {
+    height: 500px;
+}
