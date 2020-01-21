@@ -14,17 +14,12 @@
         display: block;
     }
     
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-        position: relative;
-    }
-    
     .column {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 4px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
     }
     
     .column img {
@@ -36,9 +31,11 @@
     }
     
     .center-but {
-        flex: 100%;
-        max-width: 100%;
-        padding: 0 4px;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: auto auto;
+        justify-content: center;
     }
     
     .but-center {
@@ -56,20 +53,37 @@
         color: white;
         font-size: 16px;
         border-radius: 2px;
-        position: relative;
+    }
+    
+    .but-center1 {
+        margin-top: 8px;
+        padding: 7px 5px;
+        width: 202px;
+        height: 50px;
+        border: none;
+        text-align: center;
+        margin-left: 5px;
+        margin-right: 5px;
+        font-family: sans-serif;
+        font-weight: bold;
+        background-color: #e74c3c;
+        color: white;
+        font-size: 16px;
+        border-radius: 2px;
     }
     
     .my-order {
         color: white;
-        background-color: #e74c3c;
         font-family: sans-serif;
         font-weight: bold;
-        width: 300px;
-        height: 35px;
-        position: relative;
         border-radius: 2px;
-        justify-content: left;
         margin-left: 25px;
+        float: left;
+    }
+    
+    .my-order h1 {
+        background-color: #e74c3c;
+        width: 300px;
     }
     
     #selections {
@@ -78,6 +92,7 @@
         border: 1px solid #d1d5d6;
         margin-top: -24px;
         color: #e74c3c;
+        background-color: white;
         border-radius: 2px;
         font-size: 16px;
     }
@@ -105,6 +120,29 @@
         height: 400px;
         margin-top: 100px;
     }
+    
+    @media only screen and (max-width: 1200px) {
+        #flex-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .my-order {
+            display: flex;
+            position: static;
+            flex-direction: column;
+            align-items: center;
+            float: none;
+        }
+        #button-1 {
+            margin-left: 0;
+        }
+    }
+    /*
+        Create a media query for screen max-width: 900px
+
+        style flex-container to be a flex container, flex-direction: column
+    */
 </style>
 
 <head>
@@ -124,46 +162,56 @@
             </ul>
         </nav>
     </div>
-
-    <div class="my-order">
-        <h1>MY ORDER</h1>
-        <h1 id="selections">Awaiting your selections</h1>
-        <button id="button-1">Checkout</button>
-    </div>
-    <div>
-        <div class="top-title">
-            <h1>PIZZAS</h1>
+    <div id="flex-container">
+        <div class="my-order">
+            <h1>MY ORDER</h1>
+            <h1 id="selections">Awaiting your selections</h1>
+            <button id="button-1">Checkout</button>
         </div>
+        <div>
+            <div class="column" style="height: auto; width: auto; margin-top: 20px;">
+                <div class="top-title" style="height: 50px; margin-left: 10px;">
+                    <h1 style="margin-top: 10px; margin-bottom: 10px;">PIZZAS</h1>
+                </div>
+            </div>
 
-        <div class="row">
+
             <div class="column" align="center">
                 <img src="images/pizza1.jpg" width="200px" height="200px">
                 <img src="images/pizza2.jpg" width="200px" height="200px">
                 <img src="images/pizza3.jpg" width="200px" height="200px">
             </div>
 
-            <div class="column" align="center">
-                <button class="but-center">ADD TO ORDER</button>
-                <button class="but-center">ADD TO ORDER</button>
-                <button class="but-center">ADD TO ORDER</button>
+            <div align="center">
+                <button class="but-center">ADD TO ORDER<br>Vegetable Pizza</button>
+                <button class="but-center">ADD TO ORDER<br>Cheese Pizza</button>
+                <button class="but-center">ADD TO ORDER<br>Pepperoni Pizza</button>
             </div>
         </div>
 
-        <div class="top-title">
-            <h1>WINGS</h1>
+        <div class="column" style="height: auto; width: auto; margin-top: 20px;">
+            <div class="top-title" style="height: 50px; margin-left: 10px;">
+                <h1 style="margin-top: 10px; margin-bottom: 10px; ">WINGS</h1>
+            </div>
         </div>
 
-        <div class="row">
+        <div>
             <div class="column" align="center">
-                <img src="images/wings1.jpg" width="200px" height="200px">
-                <img src="images/wings2.jpg" width="200px" height="200px">
-                <img src="images/wings3.jpg" width="200px" height="200px">
-            </div>
-
-            <div class="column" align="center">
-                <button class="but-center">ADD TO ORDER</button>
-                <button class="but-center">ADD TO ORDER</button>
-                <button class="but-center">ADD TO ORDER</button>
+                <div>
+                    <img src="images/wings1.jpg" width="200px" height="200px">
+                    <br>
+                    <button class="but-center1">ADD TO ORDER<br>Honey Garlic Wings</button>
+                </div>
+                <div>
+                    <img src="images/wings2.jpg" width="200px" height="200px">
+                    <br>
+                    <button class="but-center1">ADD TO ORDER<br>Barbeque Wings</button>
+                </div>
+                <div>
+                    <img src="images/wings3.jpg" width="200px" height="200px">
+                    <br>
+                    <button class="but-center1">ADD TO ORDER<br>Buffalo Wings</button>
+                </div>
             </div>
         </div>
         <div class="footer">
@@ -172,4 +220,5 @@
             </div>
         </div>
     </div>
+
 </body>

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="css/scss.css" />
 
 <head>
+    <link rel="stylesheet" href="css/scss.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
         .button1 {
             background-color: #e74c3c;
@@ -34,17 +35,8 @@
             text-align: center;
         }
         
-        .row {
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 4px;
-            position: relative;
-            margin-left: 150px;
-        }
-        
         .column {
             margin: 0 auto;
-            width: 60%;
             display: grid;
             grid-gap: 5px;
             grid-template-columns: auto auto;
@@ -53,7 +45,6 @@
         
         .column img {
             margin-top: 8px;
-            vertical-align: middle;
             width: 400px;
             height: 400px;
         }
@@ -67,12 +58,46 @@
             height: 400px;
         }
         
-        @media only screen and(max-width: 600px) {
+        #bottoml {
+            width: 300px;
+            height: 100px;
+        }
+        
+        #making-pizza {
+            font-family: sans-serif;
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 30px;
+        }
+        
+        #start-order {
+            font-size: 25px;
+            font-weight: bold;
+            color: black;
+            font-family: sans-serif;
+        }
+        
+        @media only screen and (max-width: 600px) {
             .column img {
                 margin-top: 8px;
-                vertical-align: middle;
                 width: 200px;
                 height: 200px;
+            }
+            #making-pizza {
+                font-size: 15px;
+            }
+            #bottoml {
+                width: 150px;
+                height: 50px;
+            }
+            #start-order {
+                font-size: 15px;
+            }
+            .button1 {
+                padding: 10px;
+            }
+            .button2 {
+                padding: 10px;
             }
         }
     </style>
@@ -110,14 +135,12 @@
         </div>
         <div class="content">
             <p>
-                <span style="text-decoration: line-through; color: #d1d5d6">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;
-                </span>‎‎‎‎‎ ‏‏‎ ‏‏‎ ‏‏‎
-                <span id="start-order" style="font-size: 25px; font-weight: bold; color: black; font-family:sans-serif;">START YOUR ORDER‎‎‎‎‎</span> ‏‏‎ ‏‏‎ ‏‏‎
+                <span style="text-decoration: line-through; color: #d1d5d6;">&horbar;&horbar;&horbar; ‎ ‎</span>
+                <span id="start-order">START YOUR ORDER‎‎‎‎‎</span> ‏‏‎ ‏‏‎ ‏‏‎
                 <button class="button1" onclick="window.location.href='choose.html'">DELIVERY</button>‎‎‎‎‎ ‏‏‎ ‏‏‎ ‏‏‎
                 <span style="color:#95a5a6; font-weight:bold; font-size: 20px; font-style: italic; ">or‎‎‎‎‎</span> ‏‏‎ ‏‏‎ ‏‏‎
                 <button class="button2" onclick="window.location.href='choose.html'">TAKEOUT</button>
-                <span style="text-decoration: line-through; color: #d1d5d6;">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;
-                </span>
+                <span style="text-decoration: line-through; color: #d1d5d6;"> ‎ ‎&horbar;&horbar;&horbar;</span>
             </p>
 
             <div class="column">
@@ -127,18 +150,15 @@
                 <img src="images/phl2.jpg">
             </div>
 
-            <p><span style="text-decoration: line-through; color: #d1d5d6;">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;</span>‎‎‎‎‎
-                <p><span style="font-family: sans-serif; font-weight: bold; color: #e74c3c; font-size: 30px;">25
+            <p><span style="text-decoration: line-through; color: #d1d5d6;">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;</span>‎‎‎‎‎
+                <p><span id="making-pizza">25
                         LOCATIONS CANADA WIDE</span><span><img id="bottoml" src="images/pizzahotline.png" width="300px"
-                            height="100px"></span><span style="font-family: sans-serif; font-weight: bold; color: #e74c3c; font-size: 30px;">MAKING
+                            height="100px"></span><span id="making-pizza">MAKING
                         PIZZAS SINCE 1988</span></p>
                 <p><span style="text-align: center; color: #e74c3c; font-size: 25px; font-family: sans-serif; font-weight: bold;">saucy‏‏‎
-                        ‏‏‎ ‏</span><span style="text-align: center; color: black; font-size: 18px; font-family: sans-serif; font-weight: bold;">little
-                        ‏‏‏‎‏‏‎ </span>
-                    <span style="text-align: center; color: #e74c3c; font-size: 25px; font-family: sans-serif; font-weight: bold;">number</span>
-                </p>
-                <p><span style="text-decoration: line-through; color: #d1d5d6">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;</span>‎‎‎‎‎
-                    ‏‏‎
+                        ‏‏‎ ‏</span><span style="text-align: center; color: black; font-size: 18px; font-family: sans-serif; font-weight: bold;">little</span>
+                    <span style="text-align: center; color: #e74c3c; font-size: 25px; font-family: sans-serif; font-weight: bold;">number</span></p>
+                <p><span style="text-decoration: line-through; color: #d1d5d6;">&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;&horbar;</span>‎‎‎‎‎
                     <div class="footer">
                         <div class="footer-bottom">
                             &copy; pizzahotline.ca | designed by Idan Zaharenko for Pizza Hotline
