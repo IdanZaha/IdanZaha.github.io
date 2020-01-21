@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/scss.css">
+
+<head>
+    <style>
+        .question {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: sans-serif;
+            background-color: #e74c3c;
+            color: white;
+            padding: 10px;
+            width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+            margin-bottom: 0;
+            position: relative;
+            border: 1px solid rgba(85, 85, 85, .2);
+            border-radius: 3px;
+            z-index: 1;
+        }
+        
+        .scndpart {
+            font-size: 18px;
+            font-weight: bold;
+            font-family: sans-serif;
+            background-color: white;
+            color: #7f8c8d;
+            padding: 10px;
+            width: 800px;
+            height: 150px;
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            border: 1px solid rgba(85, 85, 85, .2);
+            border-radius: 3px;
+        }
+        
+        #popup1 {
+            display: none;
+            border: 1px solid rgba(85, 85, 85, .2);
+            border-top: 0px;
+            width: 820px;
+            height: 400px;
+            margin-left: -11px;
+            position: relative;
+            margin-top: 50px;
+            z-index: 1px;
+            background-color: white;
+        }
+        
+        #popup2 {
+            display: none;
+            border: 1px solid rgba(85, 85, 85, .2);
+            border-top: 0px;
+            width: 820px;
+            height: 500px;
+            margin-left: -11px;
+            position: relative;
+            margin-top: 50px;
+            z-index: 1px;
+            background-color: white;
+        }
+        
+        #devbut {
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        #tobut {
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 10px;
+        }
+        
+        #p1 {
+            color: #505050;
+            font-size: 13px;
+        }
+        
+        #delivery1 {
+            width: 390px;
+            background-color: #e8f0fe;
+            border: 1px solid #95a5a6;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            display: flex;
+        }
+        
+        #delivery2 {
+            width: 390px;
+            border: 1px solid #95a5a6;
+            margin-right: auto;
+            margin-left: auto;
+            position: relative;
+            display: flex;
+        }
+        
+        #butfor1 {
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 60px;
+        }
+        
+        #butfor2 {
+            background: #e74c3c;
+            color: white;
+            font-size: 16px;
+            border: none;
+            font-family: sans-serif;
+            font-weight: bold;
+            border-radius: 2px;
+            cursor: pointer;
+            padding: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            margin-top: 40px;
+        }
+        
+        .footer {
+            background: #d1d5d6;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img class="pizzahl" src="images/pizzahotline.png" />
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div>
+        <p class="question">IS THIS ORDER FOR DELIVERY OR TAKEOUT?</p>
+        <div class="scndpart">
+            <button onclick="document.getElementById('popup1').style.display = 'block'; document.getElementById('popup2').style.display = 'none';" id="devbut">DELIVERY</button> or
+            <button onclick="document.getElementById('popup2').style.display = 'block'; document.getElementById('popup1').style.display = 'none';" id="tobut">TAKEOUT</button>
+            <div id="popup1">
+                <p id="p1">Please type in your information to continue the order.</p>
+                <p>
+                    <span style="color: red; justify-content: center; display: flex; position: relative; margin-left: -120px; margin-bottom: -21px;">*</span><span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Street Address: </span><input
+                        type="text" name="Address" placeholder="" id="delivery1" /></p>
+                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">City/Town: </span><select id="delivery2"><option value=wpg>Winnipeg</option><option value="brandon">Brandon</option><option value="Steinbach">Steinbach</option><option value="Winkler & Morden">Winkler & Morden</option><option value="Portage la Prairie">Portage la Prairie</option><option value="Stonewall">Stonewall</option></select></p>
+                <p>
+                    <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Suite/Apt #: </span><input type="text" name="suite" placeholder="" id="delivery1" /></p>
+                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Postal Code: </span><input type="text" name="suite" placeholder="" id="delivery2" /></p>
+                <button id="butfor1" onclick="window.location.href='ENTREES.html'">Continue For Delivery</button>
+            </div>
+            <div id="popup2">
+                <p id="p1">Please select a location to continue the order.</p>
+                <span style="justify-content: center; display: flex;"><p>CHOOSE A LOCATION NEAR YOU:</p></span>
+                <span style="justify-content: center; display: flex;"><select id="takeout1">
+                    <option>SELECT A LOCATION!</option>
+                    <option class="location-option">823B Corydon Ave Winnipeg, MB  R3M 0W6</option>
+                    <option class="location-option">109-1100 Concordia Ave Winnipeg, MB  R2K 4B8</option>
+                    <option class="location-option">300 St. Anne's Rd Winnipeg, MB  R2M 4Z5</option>
+                    <option class="location-option">1327 Portage Ave Winnipeg, MB  R3G 0V3</option>
+                    <option class="location-option">130A Regent Ave E Winnipeg, MB  R2C 0C1</option>
+                    <option class="location-option">723 McPhillips St Winnipeg, MB  R2X 2H7</option>
+                    <option class="location-option">3166 Portage Ave Winnipeg, MB  R3K 0Y5</option>
+                    <option class="location-option">6-2795 Pembina Hwy Winnipeg, MB  R3T 2H5</option>
+                    <option class="location-option">13-1795 Henderson Hwy Winnipeg, MB  R2G 1P3  </option>
+                    <option class="location-option">14-998 Keewatin Street Winnipeg, MB  R2R 2V1</option>
+                    <option class="location-option">B-130 Provencher Blvd Winnipeg, MB  R2H 0G6</option>
+                    <option class="location-option">B-130 Provencher Blvd Winnipeg, MB  R2H 0G3</option>
+                    <option class="location-option">UNIT D-1765 Kenaston Blvd Winnipeg, MB  R5Y 1V8</option>
+                    <option class="location-option">336 Broadway Winnipeg, MB  R3C 0T2</option>
+                    <option class="location-option">4-140 Meadowood Dr Winnipeg, MB  R3C 3Z8</option>
+                    <option class="location-option">1262 Pembina Highway Winnipeg, MB   R3T 2B1</option>
+                    <option class="location-option">6640 Roblin Blvd Winnipeg, MB  R3R 2P9</option>
+                    <option class="location-option">360 Main St. Winnipeg Square Concourse Winnipeg, MB   R3C 3Z3</option>
+                    <option class="location-option">2637 Victoria Ave Brandon, MB  R7B 0M9</option>
+                    <option class="location-option">20 Brandt St, Unit 6-B Steinbach, MB  R5G 1Y2</option>
+                    <option class="location-option">674 Main St Winkler, MB R6W 1A3</option>
+                    <option class="location-option">2-315 Saskatchewan Ave Portage La Prairie, MB  R1N 0L6</option>
+                    <option class="location-option">417 3rd Ave Stonewall, MB  R0C 2Z0  </option>
+                </select></span>
+                <iframe id="shop-location" width="290" height="290" style="margin-left: 250px; margin-top: 2px; position: relative;"></iframe>
+                <button id="butfor2" onclick="window.location.href='ENTREES.html'">Continue For Takeout</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="mapService.js">
+    </script>
+</body>
+
+</html>
