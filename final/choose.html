@@ -4,7 +4,7 @@
 
 <head>
     <style>
-            .question {
+        .question {
             font-size: 18px;
             font-weight: bold;
             font-family: sans-serif;
@@ -42,7 +42,7 @@
             display: none;
             border: 1px solid rgba(85, 85, 85, .2);
             border-top: 0px;
-            width: 800px;
+            width: 820px;
             height: 400px;
             margin-left: -11px;
             position: relative;
@@ -55,7 +55,7 @@
             display: none;
             border: 1px solid rgba(85, 85, 85, .2);
             border-top: 0px;
-            width: 800px;
+            width: 820px;
             height: 500px;
             margin-left: -11px;
             position: relative;
@@ -93,7 +93,7 @@
             font-size: 13px;
         }
         
-        #addy1 {
+        #delivery1 {
             width: 390px;
             background-color: #e8f0fe;
             border: 1px solid #95a5a6;
@@ -103,7 +103,7 @@
             display: flex;
         }
         
-        #addy2 {
+        #delivery2 {
             width: 390px;
             border: 1px solid #95a5a6;
             margin-right: auto;
@@ -141,7 +141,17 @@
             margin-left: auto;
             margin-right: auto;
             display: block;
-            margin-top: 30px;
+            margin-top: 40px;
+        }
+        
+        .footer {
+            background: #d1d5d6;
+            color: black;
+            font-family: sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            height: 400px;
+        }
     </style>
 </head>
 
@@ -165,17 +175,17 @@
                 <p id="p1">Please type in your information to continue the order.</p>
                 <p>
                     <span style="color: red; justify-content: center; display: flex; position: relative; margin-left: -120px; margin-bottom: -21px;">*</span><span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Street Address: </span><input
-                        type="text" name="Address" placeholder="" id="addy1" /></p>
-                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">City/Town: </span><select id="addy2"><option value=wpg>Winnipeg</option><option value="brandon">Brandon</option><option value="Steinbach">Steinbach</option><option value="Winkler & Morden">Winkler & Morden</option><option value="Portage la Prairie">Portage la Prairie</option><option value="Stonewall">Stonewall</option></select></p>
+                        type="text" name="Address" placeholder="" id="delivery1" /></p>
+                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">City/Town: </span><select id="delivery2"><option value=wpg>Winnipeg</option><option value="brandon">Brandon</option><option value="Steinbach">Steinbach</option><option value="Winkler & Morden">Winkler & Morden</option><option value="Portage la Prairie">Portage la Prairie</option><option value="Stonewall">Stonewall</option></select></p>
                 <p>
-                    <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Suite/Apt #: </span><input type="text" name="suite" placeholder="" id="addy2" /></p>
-                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Postal Code: </span><input type="text" name="suite" placeholder="" id="addy2" /></p>
-                <button id="butfor1">Continue For Delivery</button>
+                    <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Suite/Apt #: </span><input type="text" name="suite" placeholder="" id="delivery1" /></p>
+                <span style="color: #505050; font-size: 13px; justify-content: center; display: flex;">Postal Code: </span><input type="text" name="suite" placeholder="" id="delivery2" /></p>
+                <button id="butfor1" onclick="window.location.href='ENTREES.html'">Continue For Delivery</button>
             </div>
             <div id="popup2">
                 <p id="p1">Please select a location to continue the order.</p>
                 <span style="justify-content: center; display: flex;"><p>CHOOSE A LOCATION NEAR YOU:</p></span>
-                <span style="justify-content: center; display: flex;"><select>
+                <span style="justify-content: center; display: flex;"><select id="takeout1">
                     <option>SELECT A LOCATION!</option>
                     <option class="location-option">823B Corydon Ave Winnipeg, MB  R3M 0W6</option>
                     <option class="location-option">109-1100 Concordia Ave Winnipeg, MB  R2K 4B8</option>
@@ -202,11 +212,12 @@
                     <option class="location-option">417 3rd Ave Stonewall, MB  R0C 2Z0  </option>
                 </select></span>
                 <iframe id="shop-location" width="290" height="290" style="margin-left: 250px; margin-top: 2px; position: relative;"></iframe>
-                <button id="butfor2">Continue For Takeout</button>
+                <button id="butfor2" onclick="window.location.href='ENTREES.html'">Continue For Takeout</button>
             </div>
         </div>
     </div>
-    <script src="mapService.javascript">
+    </div>
+    <script src="mapService.js">
     </script>
 </body>
 
