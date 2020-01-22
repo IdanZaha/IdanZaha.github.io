@@ -16,6 +16,13 @@
         font-size: 20px;
     }
     
+    #h3-careers {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: #555555;
+        font-size: 20px;
+    }
+    
     .div-for-jobs {
         margin-left: 200px;
         font-family: sans-serif;
@@ -25,6 +32,113 @@
     #p-jobs {
         background-color: #d1d5d6;
         width: 1000px;
+        margin-top: 100px;
+    }
+    
+    #carbut {
+        background: #e74c3c;
+        color: white;
+        font-size: 16px;
+        border: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    #popup1 {
+        display: none;
+        border-top: 0px;
+        width: 820px;
+        height: 50px;
+        margin-left: -11px;
+        position: relative;
+        margin-top: 50px;
+        z-index: 1px;
+        background-color: white;
+    }
+    
+    #popup2 {
+        display: none;
+        border-top: 0px;
+        width: 820px;
+        height: 50px;
+        margin-left: -11px;
+        position: relative;
+        margin-top: 50px;
+        z-index: 1px;
+        background-color: white;
+    }
+    
+    #aboutbut {
+        background: #e74c3c;
+        color: white;
+        font-size: 16px;
+        border: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    #opbut {
+        background: #e74c3c;
+        color: white;
+        font-size: 16px;
+        border: none;
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: 2px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    
+    #popup3 {
+        display: none;
+        border-top: 0px;
+        width: 820px;
+        height: 50px;
+        margin-left: -11px;
+        position: relative;
+        margin-top: 50px;
+        z-index: 1px;
+        background-color: white;
+    }
+    
+    .invis-footer {
+        height: 50px;
+        opacity: 0;
+    }
+    
+    #p-for-ops {
+        margin-top: -10px;
+    }
+    
+    .footer {
+        background: #d1d5d6;
+        color: black;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        height: 75px;
+    }
+    
+    #popup4 {
+        display: none;
+        border-top: 0px;
+        width: 820px;
+        height: 50px;
+        margin-left: -11px;
+        position: relative;
+        margin-top: 50px;
+        z-index: 1px;
+        background-color: white;
+    }
+    
+    button {
+        cursor: pointer;
     }
 </style>
 
@@ -43,45 +157,68 @@
             </ul>
         </nav>
     </div>
+
     <div class="div-for-jobs">
         <h1 id="h1-careers">Pizza Hotline Careers</h1>
-        <p>Pizza Hotline offers excellent career choices for anyone looking <br> for dynamic opportunities in a fast-paced, high-energy environment.</p>
+        <button onclick="document.getElementById('popup1').style.display = 'block';" id="carbut">↓ Information</button>
+        <div id="popup1">
+            <p>Pizza Hotline offers excellent career choices for anyone looking <br> for dynamic opportunities in a fast-paced, high-energy environment.</p>
+        </div>
         <h1 id="h2-careers">About Us</h1>
-        <p>Like many great success stories, the tale of Pizza Hotline and Café 22 stems from humble beginnings. What started with one small pizza restaurant in Winnipeg back in 1988 has grown steadily into a network of market-dominating franchise operations,
-            with ten locations in Winnipeg, one each in Steinbach, Winkler, Brandon, and another in Stonewall.
-            <br>
-            <br> By adapting to change while staying true to our mission, we’ve developed a system for success based on nearly 20 years of industry experience. We’ve proven we’re no flash in the pan. And we’re growing again. We’ve developed an aggressive
-            expansion plan to increase our presence across North America and now we need just the right people to join our family of franchisees.
-            <br>
-            <br>We offer two franchise package options – Pizza Hotline take-out and delivery locations, and Café 22 dine-in restaurants, which feature an expanded Pizza Hotline menu served up in a funky yet unpretentious atmosphere.
-            <br>
-            <br> Is there a Pizza Hotline or Café 22 near you? If not… what are you waiting for?</p>
+        <button onclick="document.getElementById('popup2').style.display = 'block';" id="aboutbut">↓ Information</button>
+        <div id="popup2">
+            <p id="p-for-ops">Like many great success stories, the tale of Pizza Hotline and Café 22 stems from humble beginnings. What started with one small pizza restaurant in Winnipeg back in 1988 has grown steadily into a network of market-dominating franchise operations,
+                with ten locations in Winnipeg, one each in Steinbach, Winkler, Brandon, and another in Stonewall.
+                <br>
+                <br> By adapting to change while staying true to our mission, we’ve developed a system for success based on nearly 20 years of industry experience. We’ve proven we’re no flash in the pan. And we’re growing again. We’ve developed an aggressive
+                expansion plan to increase our presence across North America and now we need just the right people to join our family of franchisees.
+                <br>
+                <br>We offer two franchise package options – Pizza Hotline take-out and delivery locations, and Café 22 dine-in restaurants, which feature an expanded Pizza Hotline menu served up in a funky yet unpretentious atmosphere.
+                <br>
+                <br> Is there a Pizza Hotline or Café 22 near you? If not… what are you waiting for?</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="invis-footer">
+        </div>
+
+        <h1 id="h3-careers">Job Availability</h1>
+        <button onclick="document.getElementById('popup4').style.display = 'block';" id="aboutbut">↓ Information</button>
+        <div id="popup4">
+            <p id="p-jobs"><span>Job Title:</span>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
+                ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎<span>Location:</span></p>
+
+            <p><a href="stonefired-job.html">Stone-Fire'd Pizza Restaurant Employee</a> ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
+                ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
+                <span>823 Corydon</span></p>
+        </div>
+
+
 
         <br>
         <br>
         <br>
         <br>
-        <br>
+        <h1 id="h2-careers" style="margin-top: 100px;">Other Job Oppurtunities</h1>
+        <button onclick="document.getElementById('popup3').style.display = 'block';" id="opbut">↓ Information</button>
+        <div id="popup3">
+            <p>If you are interested in becoming an important part of our team, please download our <a href="https://www.pizzahotline.ca/pizzahotline/pdfs/Application.pdf">PDF application form.</a> Please state position you wish to apply for. For Delivery
+                and Kitchen positions please send or drop off at your store preference.<br>
+                <br> For all other opportunities please email
+                <a href="mailto:careers@pizzahotline.ca">careers@pizzahotline.ca</a>
+            </p>
+        </div>
+    </div>
+    <div class="invis-footer">
+    </div>
 
-
-        <p id="p-jobs"><span>Job Title:</span>‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
-            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‎<span>Location:</span></p>
-
-        <p><a href="stonefired-job.html">Stone-Fire'd Pizza Restaurant Employee</a> ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
-            ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎ ‎‏‏‎
-            <span>823 Corydon</span></p>
-
-
-        <br>
-        <br>
-        <br>
-        <br>
-        <h1 id="h1-careers" style="margin-top: 100px;">Other Job Oppurtunities</h1>
-        <p>If you are interested in becoming an important part of our team, please download our <a href="https://www.pizzahotline.ca/pizzahotline/pdfs/Application.pdf">PDF application form.</a> Please state position you wish to apply for. For Delivery and
-            Kitchen positions please send or drop off at your store preference.<br>
-            <br> For all other opportunities please email
-            <a href="mailto:careers@pizzahotline.ca">careers@pizzahotline.ca</a>
-        </p>
+    <div class="footer">
+        <div class="footer-bottom">
+            &copy; pizzahotline.ca | designed by Idan Zaharenko for Pizza Hotline
+        </div>
     </div>
 </body>
 

@@ -55,7 +55,7 @@
             font-family: sans-serif;
             font-weight: bold;
             font-size: 20px;
-            height: 400px;
+            height: 75px;
         }
         
         #bottoml {
@@ -77,7 +77,12 @@
             font-family: sans-serif;
         }
         
-        @media only screen and (max-width: 600px) {
+        #img-for-mys {
+            width: 100%;
+            height: 400px;
+        }
+        
+        @media only screen and (max-width: 1000px) {
             .column img {
                 margin-top: 8px;
                 width: 200px;
@@ -98,6 +103,15 @@
             }
             .button2 {
                 padding: 10px;
+            }
+            #img-for-mys {
+                height: 200px;
+            }
+        }
+        
+        @media only screen and (min-width: 1500px) {
+            #img-for-mys {
+                height: 600px;
             }
         }
     </style>
@@ -122,15 +136,15 @@
     <div class="bg-image">
         <div class="slideshow-container">
             <div class="mys fade">
-                <img src="images/phl5.jpg" style="width:100%; height:400px;">
+                <img id="img-for-mys" src="images/phl5.jpg">
             </div>
 
             <div class="mys fade">
-                <img src="images/phl8.png" style="width:100%; height:400px;">
+                <img id="img-for-mys" src="images/phl8.png">
             </div>
 
             <div class="mys fade">
-                <img src="images/phl9.jpg" style="width:100%; height:400px;">
+                <img id="img-for-mys" src="images/phl9.jpg">
             </div>
         </div>
         <div class="content">
